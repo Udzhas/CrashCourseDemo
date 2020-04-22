@@ -63,7 +63,7 @@ public class AccountPage  extends BaseClass {
     @FindBy(xpath = "//img[@alt='My Account']/..")
     private  WebElement topLeftLogo;
     //logout
-    public LoginPage LogOut(){
+    public LoginPage logOut(){
         this.dropdownLogin.click();
         this.logoutButton.click();
         return new LoginPage(driver);
