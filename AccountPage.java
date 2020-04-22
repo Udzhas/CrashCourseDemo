@@ -82,68 +82,68 @@ public class AccountPage  extends BaseClass {
     }
 
     //tabs Open methods
-    public AccountPage OpenMy_Profile(){ this.my_Profile.click(); return this; }
-    public AccountPage OpenWishlist(){ this.wishlist.click(); return this; }
-    public AccountPage OpenNewsLetter(){ this.newsLetter.click(); return this; }
-    public AccountPage OpenBookings(){ this.bookings.click(); return this; }
+    public AccountPage openMy_Profile(){ this.my_Profile.click(); return this; }
+    public AccountPage openWishlist(){ this.wishlist.click(); return this; }
+    public AccountPage openNewsLetter(){ this.newsLetter.click(); return this; }
+    public AccountPage openBookings(){ this.bookings.click(); return this; }
 
     // input fields
     public String getText_address1(){
         this.my_Profile.click();
         return this.addressField.getText();
     }
-    public AccountPage Set_Address1(String value){
+    public AccountPage set_Address1(String value){
         this.addressField.click();
         this.addressField.sendKeys(value);
         return this;
     }
-    public AccountPage Set_Address2(String value){
+    public AccountPage set_Address2(String value){
         this.address2Field.click();
         this.address2Field.sendKeys(value);
         return this;
     }
-    public  AccountPage ChangePassword(String password){
+    public  AccountPage changePassword(String password){
         this.my_Profile.click();
         this.passwordField.sendKeys(password);
         this.confirmPasswordField.sendKeys(password);
         return this;
     }
-    public AccountPage Click_Submit(){
+    public AccountPage click_Submit(){
         this.submitButton.click();
         return this;
     }
-    public AccountPage Set_City(String value){
+    public AccountPage set_City(String value){
         this.cityField.click();
         this.cityField.sendKeys(value);
         return this;
     }
-    public AccountPage Set_ZipPostalCode(String value){
+    public AccountPage set_ZipPostalCode(String value){
         this.postalZipCodeField.click();
         this.postalZipCodeField.sendKeys(value);
         return this;
     }
-    public AccountPage Set_State(String value){
+    public AccountPage set_State(String value){
         this.stateField.click();
         this.stateField.sendKeys(value);
         return this;
     }
-    public AccountPage Set_email(String value){
+    public AccountPage set_email(String value){
         this.emailField.click();
         this.emailField.sendKeys(value);
         return this;
     }
-    public AccountPage Set_Country(String value){
+    public AccountPage set_Country(String value){
         this.selectCountryBox.click();
         this.countryField.sendKeys(value );
         this.countryField.sendKeys(Keys.ENTER);
         return this;
     }
-    public AccountPage Set_phone(String value){
+    public AccountPage set_phone(String value){
         this.phoneField.click();
         this.phoneField.sendKeys(value);
         return this;
     }
-    public AccountPage TopOfPage(){
+    public AccountPage topOfPage(){
         this.backToTopButton.click();
         return this;
     }
@@ -152,7 +152,7 @@ public class AccountPage  extends BaseClass {
         this.slider.click();
         return this;
     }
-    public HomePage BackToHomePage(){
+    public HomePage backToHomePage(){
         this.topLeftLogo.click();
         return new HomePage(driver);
     }
