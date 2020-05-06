@@ -33,10 +33,10 @@ public class LogInPage extends BaseClass {
         return this;
     }
 
-    public LogInPage clickSearchButton()
+    public AccountPage clickSearchButton()
     {
         searchButton.click();
-        return this;
+        return new AccountPage(driver);
     }
 
     public String getAccountText()
